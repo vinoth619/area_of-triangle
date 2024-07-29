@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Triangle</title>
+</head>
+<body>
+    <h1>Area of Triangle</h1>
+    <input type="text" name="" id="ins1" placeholder="enter the height">
+    <input type="text" name="" id="ins2" placeholder="enter the base ">
+    <button onclick="send()">send</button>
+    <h1 id="show"></h1>
+    <script>
+        function send(){
+        var height=document.getElementById("ins1")
+        var base=document.getElementById("ins2")
+        var area=0.5*Number(height.value)*Number(base.value)
+        document.getElementById("show").innerHTML=area+"square units"
+        }
+    </script>
+    
+</body>
+</html>
